@@ -1,0 +1,25 @@
+
+
+
+.input{
+    padding: 10px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.label{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.spanLabel{
+    margin-bottom: 5px;
+}
+
+.btn{
+    padding: 5px;
+    cursor: pointer;
+}
