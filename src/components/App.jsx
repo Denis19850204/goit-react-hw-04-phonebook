@@ -42,6 +42,7 @@ class App extends Component {
     ) {
       return alert(`${name}is already in contacts`);
     }
+    
 
     this.setState(prevState => ({
       contacts: [newContact, ...prevState.contacts],
