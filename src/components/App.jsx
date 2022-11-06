@@ -27,22 +27,13 @@ class App extends Component {
       number,
     };
 
-    // const stateName = this.state.contacts.find(contact => contact.name.toLowerCase());
-    // const stateNumber = this.state.contacts.find(contact =>contact.number);
+    const isExsist = this.state.contacts.find(
+      contact => contact.name.toLowerCase() === name.toLowerCase()
+    );
 
-    // if (stateName.name || stateNumber.number) {
-    //   return alert(`${name}is already in contacts`);
-    // }
-
-    if (
-      this.state.contacts.find(
-        contact => contact.name.toLowerCase() === name.toLowerCase()
-      ) ||
-      this.state.contacts.find(contact => contact.number === number)
-    ) {
+    if (isExsist) {
       return alert(`${name}is already in contacts`);
     }
-    
 
     this.setState(prevState => ({
       contacts: [newContact, ...prevState.contacts],
